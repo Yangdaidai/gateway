@@ -28,6 +28,7 @@ repositories {
 
 ext {
     set('springCloudVersion', "Hoxton.SR1")
+    set('springRetryVersion', "1.2.5.RELEASE")
 }
 
 dependencies {
@@ -39,7 +40,7 @@ dependencies {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
 
-    compile('org.springframework.retry:spring-retry:1.2.5.RELEASE')
+    compile("org.springframework.retry:spring-retry:${springRetryVersion}")
 
 }
 
